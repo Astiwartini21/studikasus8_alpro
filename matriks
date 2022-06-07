@@ -1,0 +1,49 @@
+#include <iostream>
+using namespace std;
+
+class Matriks{
+  public:
+  void baris();
+  void kolom();
+  void output(); 
+  private:
+  string a[6][3]={{"Samsung Evo","30","200000"}, {"SanDisk 16GB ","45","60000"},{"Logitech M170","55","120000"},{"WD Green 120GB","23","400000"},{"Garmin Venu SQ","12","3100000"},{"Espon L3210 AIO","14","2500000"}};
+  float jumlah=0;
+};
+void  Matriks::baris(){
+    jumlah =0;
+    for(int i=0; i<3; i++){
+    	for(int j=0; j<3; j++){
+    }
+    }
+}
+void Matriks::kolom(){
+  for(int i=0; i<6; i++){
+    for(int j=0; j<6; j++){
+
+    }
+  }
+}
+
+void Matriks::output(){
+    cout << "Nama Barang      |stok      | Harga     |\n";
+    cout << "_________________|__________|____________\n"; 
+    for(int i=0; i<6; i++){
+  	  for (int j=0; j<3; j++){
+  		  cout << a[i][j] << "         ";
+	    }
+	    cout << endl;
+    }
+
+  }
+
+
+int main(){
+  Matriks data;
+  data.output();
+  cout << endl;
+  data.baris();
+  cout << endl;
+  data.kolom();
+  cout << endl;
+}
